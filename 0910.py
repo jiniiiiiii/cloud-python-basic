@@ -166,6 +166,7 @@ except:     # 구현하고 싶은 문장에 Error가 발생한 경우 실행 문
     
     
 # if문 짧게 
+# 조건이 참이면 왼쪽이 기준. -> if문 왼쪽이 기준
 a = 5
-res = "Even" if a % 2 == 0 else "Odd"   # 나머지가 0이 아님. --> Even 만 저장
+res = "Even" if a % 2 == 0 else "Odd"   # 나머지가 0이면 Even, 0이 아니면 Odd
 print("res: ", res)
