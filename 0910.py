@@ -163,3 +163,9 @@ except:     # 구현하고 싶은 문장에 Error가 발생한 경우 실행 문
     print(x in list)    # true -> list 안 있음. 
     print(y in list)    # false 
     print(y not in list)    # true -> list안 없. '''
+    
+    
+# if문 짧게 
+a = 5
+res = "Even" if a % 2 == 0 else "Odd"   # 나머지가 0이 아님. --> Even 만 저장
+print("res: ", res)
