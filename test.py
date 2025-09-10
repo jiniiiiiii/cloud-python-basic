@@ -1,2 +1,1 @@
-print("test....")ss
-s
+print("test....")

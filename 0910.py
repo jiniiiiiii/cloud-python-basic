@@ -166,7 +166,23 @@ except:     # 구현하고 싶은 문장에 Error가 발생한 경우 실행 문
     
     
 # if문 짧게 
-# 조건이 참이면 왼쪽이 기준. -> if문 왼쪽이 기준
+'''
+# 1기본. 조건이 참이면 왼쪽이 기준. -> if문 왼쪽이 기준
 a = 5
 res = "Even" if a % 2 == 0 else "Odd"   # 나머지가 0이면 Even, 0이 아니면 Odd
-print("res: ", res)
+print("res: ", res) # 거짓이므로 Odd 출력
+
+#res2 = "양수" if a>0 else "음수" else if a<0 "음수" #-> 이건 뭔지 잘 모르겠음.
+
+# 튜플 버전 
+n = 5
+res=("Odd","Even")[n%2 ==0]  # 거짓, 참  [조건식] --> 조건식의 결과가 거짓인가 참인가
+print(res)  # 조건이 거짓 -> 거짓에 해당하는 Odd가 출력
+
+# 딕셔너리 버전 
+m=3; n =5 
+res = {True:m, False:n}[m>n]    # 거짓이므로 n출력
+print(res)
+
+res = {True:n, False:m}[m>n]    # 거짓이므로 m출력
+print(res)'''
