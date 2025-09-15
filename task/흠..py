@@ -32,4 +32,12 @@ def __init__main__():
 
     
 print(data_list)
-print(data_list[0][0], data_list[1][0])
+
+# 출력에 대한 부분 
+def print_data():
+    # for i in range(len(data_list[i])):    # 호출도 안되었는데 출력함. 
+    #     print(data_list[i][0])
+    for person in data_list:
+        print(person[0])
+        
+print_data()
