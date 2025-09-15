@@ -114,3 +114,5 @@ for name, data in data_list.items():
 
 print("--------------------------------------------------------")
 #print(0명     국어합  영어합  수학합      .     평균) # 어캐  출력함. 
+
+print(data_list[name])
