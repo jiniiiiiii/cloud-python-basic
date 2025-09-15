@@ -174,15 +174,40 @@ print("res: ", res) # 거짓이므로 Odd 출력
 
 #res2 = "양수" if a>0 else "음수" else if a<0 "음수" #-> 이건 뭔지 잘 모르겠음.
 
+# 리스트 버전 -> 거짓,참
+n = 5
+res = ["Odd", "Even"][int(n%2==0)]  # n이 짝수면 True(1), 홀수면 False(0)
+print(res)  # Even 출력? odd가 출력된다는데 
+
 # 튜플 버전 
 n = 5
 res=("Odd","Even")[n%2 ==0]  # 거짓, 참  [조건식] --> 조건식의 결과가 거짓인가 참인가
 print(res)  # 조건이 거짓 -> 거짓에 해당하는 Odd가 출력
 
-# 딕셔너리 버전 
+# 딕셔너리 버전 -> 키로 따라 감. 
 m=3; n =5 
-res = {True:m, False:n}[m>n]    # 거짓이므로 n출력
+res = {True:m, False:n}[m>n]    # 거짓이므로 n출력 -> 5
 print(res)
 
-res = {True:n, False:m}[m>n]    # 거짓이므로 m출력
+res = {False:n, True:m}[m>n]    # 거짓이므로 n출력 -> 5
 print(res)'''
+
+
+##################################
+# if조건문
+##################################
+
+# 여러 줄 줄바꿈 출력
+print("""
+if조건: 
+    실행식
+else 
+    실행식
+      """)
+
+kor = 80 
+if kor > 90:
+    print("oh~~~~"); 
+else: 
+    print("더 분발하세요")
+    
